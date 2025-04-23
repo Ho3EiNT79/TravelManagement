@@ -19,7 +19,7 @@
 
 ## 🛠️ تکنولوژی‌ها
 
-- Python 3.x
+- Python 3.1x
 - PostgreSQL
 - Psycopg2
 - cmd module
