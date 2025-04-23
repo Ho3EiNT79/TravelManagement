@@ -41,4 +41,10 @@ cd TravelManagement
 pip install -r requirements.txt
 vi example.env
 mv example.env .env
-python -m travel
+```
+### دستورات اصلی:
+```bash
+python -m travel register_user
+python -m travel login_admin
+python -m travel login_admin
+```
