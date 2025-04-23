@@ -32,7 +32,7 @@
 ```bash
 python -m venv .venv
 source .venv/bin/activate  # on Linux/macOS
-.venv\Scripts\activate     # on Windows
+.venv\Scripts\activate.bat     # on Windows
 ```
 ### اجرای برنامه:
 
