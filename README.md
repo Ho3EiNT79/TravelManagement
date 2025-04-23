@@ -37,6 +37,7 @@ source .venv/bin/activate  # on Linux/macOS
 ### : اجرای برنامه
 
 ```bash
+cd TravelManagement
 pip install -r requirements.txt
-cd ..
-python -m travell
+vi .env
+python -m travel
