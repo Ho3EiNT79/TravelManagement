@@ -27,14 +27,14 @@
 
 ## 🚀 اجرا
 
-### : راه‌اندازی محیط مجازی
+### راه‌اندازی محیط مجازی:
 
 ```bash
 python -m venv .venv
 source .venv/bin/activate  # on Linux/macOS
 .venv\Scripts\activate     # on Windows
 ```
-### : اجرای برنامه
+### اجرای برنامه:
 
 ```bash
 cd TravelManagement
