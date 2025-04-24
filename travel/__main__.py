@@ -1,6 +1,6 @@
 import sys
 from travel.utils.functions.database import create_tables
-from travel.utils.functions.admin import login_admin
+from travel.utils.functions.admin import login_admin, register_superuser
 from travel.utils.functions.user import login_user, register_user
 from travel import logger
 
@@ -18,6 +18,8 @@ def main():
         login_user()
     elif command == "login_admin":
         login_admin()
+    elif command == "register_superuser":
+        register_superuser()
 
 
 if __name__ == "__main__":

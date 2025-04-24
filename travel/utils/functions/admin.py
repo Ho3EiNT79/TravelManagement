@@ -1,6 +1,17 @@
-from .database import add_travel_db, get_travels_db, delete_travel_db, edit_travel_db, list_reserves_db, login_admin_db
+from .database import add_travel_db, get_travels_db, delete_travel_db, edit_travel_db, list_reserves_db, login_admin_db, add_user_db
 from datetime import datetime
 from travel import logger
+
+
+def register_superuser():
+    first_name = input("Enter your first name: ")
+    last_name = input("Enter your last name: ")
+    username = input("Enter your username: ")
+    password = input("Enter your password: ")
+    phone_number = input("Enter your phone number: ")
+    email_number = input("Enter your email number: ")
+    add_user_db(first_name, last_name, username, password, phone_number, email_number, "admin")
+    logger(__name__).info("SuperUser registered successfully")
 
 def login_admin():
     from travel.utils.shell.admin_shell import AdminLoginShell

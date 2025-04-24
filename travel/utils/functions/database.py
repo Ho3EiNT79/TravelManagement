@@ -53,11 +53,11 @@ def login_user_db(username, password):
     return False
 
 
-def add_user_db(first_name, last_name, username, password, phone_number, email_number):
+def add_user_db(first_name, last_name, username, password, phone_number, email_number, role):
     cnx = get_db()
     cursor = cnx.cursor()
-    sql = f"""INSERT INTO users (first_name, last_name, username, password, phone_number, email_number) VALUES (%s, %s, %s, %s, %s, %s);"""
-    values = (first_name, last_name, username, password, phone_number, email_number)
+    sql = f"""INSERT INTO users (first_name, last_name, username, password, phone_number, email_number, role) VALUES (%s, %s, %s, %s, %s, %s, %s);"""
+    values = (first_name, last_name, username, password, phone_number, email_number, role)
     cursor.execute(sql, values)
     cnx.commit()
 

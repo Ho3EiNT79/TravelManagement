@@ -1,6 +1,7 @@
 from .database import get_reserve_travel_db, update_travel_db, add_to_reserve_db, list_reserves_db, get_reserve_info, \
     del_reserve_db, get_travel_by_id_db, add_user_db, login_user_db
 from travel.misc import user_session
+from travel import logger
 
 
 def register_user():
@@ -10,8 +11,8 @@ def register_user():
     password = input("Enter your password: ")
     phone_number = input("Enter your phone number: ")
     email_number = input("Enter your email number: ")
-    add_user_db(first_name, last_name, username, password, phone_number, email_number)
-    # logger(__name__).info(f"User({username}) added successfully.")
+    add_user_db(first_name, last_name, username, password, phone_number, email_number, "user")
+    logger(__name__).info(f"User({username}) added successfully.")
 
 
 def login_user():
