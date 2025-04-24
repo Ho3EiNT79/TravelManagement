@@ -45,6 +45,7 @@ mv example.env .env
 ### دستورات اصلی:
 ```bash
 python -m travel register_user
+python -m travel register_superuser
 python -m travel login_user
 python -m travel login_admin
 ```
